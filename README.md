@@ -14,7 +14,7 @@ CityOS Photo Stream is fast asyncronus image caching and downloading framework w
 ## Usage
 
 ```swift
-import CityOSPhoto
+import PhotoStream
 
 PhotoStream.fetch("example.com/image.png") {
     success, image in
