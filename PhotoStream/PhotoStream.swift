@@ -133,18 +133,11 @@ public final class PhotoStream {
     private class func saveImageToCache(photo: Photo) -> PhotoState {
         switch photo.state {
         case PhotoState.Cached.rawValue:
-            println("there is photo in the cache saveImageToCache")
             return .Cached
         default:
             photo.state = PhotoState.Cached.rawValue
             break
         }
-        
-        var error : NSError?
-        //        context.save(&error)
-        println(error)
-        if error != nil { return .Failed }
-        println("photo is cached")
         return .Cached
     }
     
@@ -188,7 +181,6 @@ public final class PhotoStream {
                     
                     self.task = self.session.dataTaskWithRequest(request) {
                         data, response, error in
-                        println("starting request")
                         if error != nil {
                             completion(success: false, image: nil)
                         } else {
@@ -211,14 +203,13 @@ public final class PhotoStream {
     }
     
     public class func saveCache() {
-        println("saving cache")
         self.stack.saveCache()
     }
 }
 
 public extension UIImageView {
     public func setImageFromPhotoStream(URLString URL : String) {
-        
+        self.alpha = 0
         PhotoStream.fetch(URLString: URL) {
             success, photo in
             if success {
