@@ -12,7 +12,7 @@ CityOS Photo Stream is fast asyncronus image caching and downloading framework w
 * Every download or cache request is performing on the background thread, so you don't need to worry about blocking UI thread.
 
 ## Usage
-
+* With completion block
 ```swift
 import PhotoStream
 
@@ -20,6 +20,11 @@ PhotoStream.fetch("example.com/image.png") {
     success, image in
     someImageView.image = image
 }
+```
+
+* With UIImageView extension
+```swift
+someImageView.setImageFromPhotoStream(URLString: "http://example.com/image.png")
 ```
 ## Requirements
 
