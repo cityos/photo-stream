@@ -217,23 +217,17 @@ public final class PhotoStream {
 }
 
 public extension UIImageView {
-    public func setImageFromPhotoStream(URLString URL : String, placeholderImage placeholder : UIImage, animated : Bool = true) {
-//        self.image = placeholder
-//        
-//        if animated { self.alpha = 0 }
-//        PhotoStream.fetch(URLString: URL) {
-//            success, photo in
-//            if success {
-//                if animated {
-//                    UIView.animateWithDuration(0.4) {
-//                        animations in
-//                        self.image = photo
-//                        self.alpha = 1
-//                    }
-//                } else {
-//                    self.image = photo
-//                }
-//            }
-//        }
+    public func setImageFromPhotoStream(URLString URL : String) {
+        
+        PhotoStream.fetch(URLString: URL) {
+            success, photo in
+            if success {
+                UIView.animateWithDuration(0.4) {
+                    animations in
+                    self.image = photo
+                    self.alpha = 1
+                }
+            }
+        }
     }
 }
