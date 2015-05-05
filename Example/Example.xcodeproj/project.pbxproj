@@ -8,22 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		B38E96051AF8E6690017F90C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38E96041AF8E6690017F90C /* AppDelegate.swift */; };
-		B38E96071AF8E6690017F90C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38E96061AF8E6690017F90C /* ViewController.swift */; };
 		B38E960A1AF8E6690017F90C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B38E96081AF8E6690017F90C /* Main.storyboard */; };
 		B38E960C1AF8E6690017F90C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38E960B1AF8E6690017F90C /* Images.xcassets */; };
 		B38E960F1AF8E6690017F90C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B38E960D1AF8E6690017F90C /* LaunchScreen.xib */; };
+		B38E96361AF8F14E0017F90C /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38E96351AF8F14E0017F90C /* PhotoTableViewCell.swift */; };
+		B38E96381AF8F17A0017F90C /* PhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38E96371AF8F17A0017F90C /* PhotosTableViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B38E96311AF8EC410017F90C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B38E962C1AF8EC410017F90C /* PhotoStream.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B38E959E1AF8E3C20017F90C;
+			remoteInfo = PhotoStream;
+		};
+		B38E96331AF8EC410017F90C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B38E962C1AF8EC410017F90C /* PhotoStream.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B38E95BC1AF8E4170017F90C;
+			remoteInfo = Tests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B38E95FF1AF8E6690017F90C /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38E96031AF8E6690017F90C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B38E96041AF8E6690017F90C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B38E96061AF8E6690017F90C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B38E96091AF8E6690017F90C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B38E960B1AF8E6690017F90C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B38E960E1AF8E6690017F90C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B38E96191AF8E6690017F90C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B38E961A1AF8E6690017F90C /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
+		B38E962C1AF8EC410017F90C /* PhotoStream.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PhotoStream.xcodeproj; path = ../PhotoStream.xcodeproj; sourceTree = "<group>"; };
+		B38E96351AF8F14E0017F90C /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		B38E96371AF8F17A0017F90C /* PhotosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,8 +58,8 @@
 		B38E95F61AF8E6690017F90C = {
 			isa = PBXGroup;
 			children = (
+				B38E962C1AF8EC410017F90C /* PhotoStream.xcodeproj */,
 				B38E96011AF8E6690017F90C /* Example */,
-				B38E96171AF8E6690017F90C /* ExampleTests */,
 				B38E96001AF8E6690017F90C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,10 +76,11 @@
 			isa = PBXGroup;
 			children = (
 				B38E96041AF8E6690017F90C /* AppDelegate.swift */,
-				B38E96061AF8E6690017F90C /* ViewController.swift */,
-				B38E96081AF8E6690017F90C /* Main.storyboard */,
+				B38E96371AF8F17A0017F90C /* PhotosTableViewController.swift */,
+				B38E96351AF8F14E0017F90C /* PhotoTableViewCell.swift */,
 				B38E960B1AF8E6690017F90C /* Images.xcassets */,
 				B38E960D1AF8E6690017F90C /* LaunchScreen.xib */,
+				B38E96081AF8E6690017F90C /* Main.storyboard */,
 				B38E96021AF8E6690017F90C /* Supporting Files */,
 			);
 			path = Example;
@@ -75,21 +94,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B38E96171AF8E6690017F90C /* ExampleTests */ = {
+		B38E962D1AF8EC410017F90C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B38E961A1AF8E6690017F90C /* ExampleTests.swift */,
-				B38E96181AF8E6690017F90C /* Supporting Files */,
+				B38E96321AF8EC410017F90C /* PhotoStream.framework */,
+				B38E96341AF8EC410017F90C /* Tests.xctest */,
 			);
-			path = ExampleTests;
-			sourceTree = "<group>";
-		};
-		B38E96181AF8E6690017F90C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B38E96191AF8E6690017F90C /* Info.plist */,
-			);
-			name = "Supporting Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,12 +148,35 @@
 			mainGroup = B38E95F61AF8E6690017F90C;
 			productRefGroup = B38E96001AF8E6690017F90C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B38E962D1AF8EC410017F90C /* Products */;
+					ProjectRef = B38E962C1AF8EC410017F90C /* PhotoStream.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B38E95FE1AF8E6690017F90C /* Example */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B38E96321AF8EC410017F90C /* PhotoStream.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PhotoStream.framework;
+			remoteRef = B38E96311AF8EC410017F90C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B38E96341AF8EC410017F90C /* Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.xctest;
+			remoteRef = B38E96331AF8EC410017F90C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B38E95FD1AF8E6690017F90C /* Resources */ = {
@@ -162,8 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B38E96071AF8E6690017F90C /* ViewController.swift in Sources */,
+				B38E96361AF8F14E0017F90C /* PhotoTableViewCell.swift in Sources */,
 				B38E96051AF8E6690017F90C /* AppDelegate.swift in Sources */,
+				B38E96381AF8F17A0017F90C /* PhotosTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

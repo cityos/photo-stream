@@ -10,6 +10,10 @@
 		B38E95A41AF8E3C20017F90C /* PhotoStream.h in Headers */ = {isa = PBXBuildFile; fileRef = B38E95A31AF8E3C20017F90C /* PhotoStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B38E95C11AF8E4180017F90C /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38E95C01AF8E4180017F90C /* Tests.swift */; };
 		B38E95C21AF8E4180017F90C /* PhotoStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38E959E1AF8E3C20017F90C /* PhotoStream.framework */; };
+		B38E96251AF8E7FC0017F90C /* PhotoStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38E96241AF8E7FC0017F90C /* PhotoStream.swift */; };
+		B38E96271AF8E8140017F90C /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38E96261AF8E8140017F90C /* Photo.swift */; };
+		B38E96291AF8E8920017F90C /* PhotoObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38E96281AF8E8920017F90C /* PhotoObjectModel.swift */; };
+		B38E962B1AF8E9DF0017F90C /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38E962A1AF8E9DF0017F90C /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		B38E95BC1AF8E4170017F90C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38E95BF1AF8E4180017F90C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B38E95C01AF8E4180017F90C /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		B38E96241AF8E7FC0017F90C /* PhotoStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStream.swift; sourceTree = "<group>"; };
+		B38E96261AF8E8140017F90C /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		B38E96281AF8E8920017F90C /* PhotoObjectModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoObjectModel.swift; sourceTree = "<group>"; };
+		B38E962A1AF8E9DF0017F90C /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +79,10 @@
 		B38E95A01AF8E3C20017F90C /* PhotoStream */ = {
 			isa = PBXGroup;
 			children = (
-				B38E95A31AF8E3C20017F90C /* PhotoStream.h */,
+				B38E96261AF8E8140017F90C /* Photo.swift */,
+				B38E96281AF8E8920017F90C /* PhotoObjectModel.swift */,
+				B38E96241AF8E7FC0017F90C /* PhotoStream.swift */,
+				B38E962A1AF8E9DF0017F90C /* Stack.swift */,
 				B38E95A11AF8E3C20017F90C /* Supporting Files */,
 			);
 			path = PhotoStream;
@@ -80,6 +91,7 @@
 		B38E95A11AF8E3C20017F90C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B38E95A31AF8E3C20017F90C /* PhotoStream.h */,
 				B38E95A21AF8E3C20017F90C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -208,6 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38E962B1AF8E9DF0017F90C /* Stack.swift in Sources */,
+				B38E96271AF8E8140017F90C /* Photo.swift in Sources */,
+				B38E96251AF8E7FC0017F90C /* PhotoStream.swift in Sources */,
+				B38E96291AF8E8920017F90C /* PhotoObjectModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +479,7 @@
 				B38E95B41AF8E3C20017F90C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B38E95C51AF8E4180017F90C /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +488,7 @@
 				B38E95C71AF8E4180017F90C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
